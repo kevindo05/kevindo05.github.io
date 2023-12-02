@@ -14,6 +14,19 @@
 <h2>CPSC 120</h2>
 
 <p> Lab 12 </p>
-
+<script>
+    // 1. Create the button
+  var button = document.createElement("button");
+  button.innerHTML = "Click for something";
+  
+  // 2. Append somewhere
+  var body = document.getElementsByTagName("body")[0];
+  body.appendChild(button);
+  
+  // 3. Add event handler
+  button.addEventListener ("click", function() {
+    alert("processing...");
+  });
+  </script>
 </body>
 </html>
